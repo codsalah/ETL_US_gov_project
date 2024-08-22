@@ -1,0 +1,8 @@
+web_browser,operating_sys,from_url,to_url,city,latitude,longitude,time_zone,time_in,time_out
+Mozilla,Windows NT 10.0; Win64; x64,www.example.com,www.example.com,San Francisco,37.774929,-122.419418,America/New_York,1632948671,1632948675
+Mozilla,Windows NT 10.0; Win64; x64; rv:92.0,t.co,www.example.com,Chicago,41.878113,-87.629799,America/Chicago,1633045671,1633045673
+Mozilla,Macintosh; Intel Mac OS X 10.15; rv:90.0,direct,example.com,Sao Paulo,-23.55052,-46.633308,America/Sao_Paulo,1633145671,1633145674
+Mozilla,Windows NT 10.0; Win64; x64,www.example.com,www.example.com,New York,40.712776,-74.005974,America/New_York,1633245671,1633245675
+Mozilla,Windows NT 10.0; Win64; x64,www.example.com,www.example.com,New York,40.712776,-74.005974,America/New_York,1633345671,1633345676
+Mozilla,Windows NT 7.0; Win64; x64,plus.url.google.com,www.example.com,Warsaw,52.229676,21.012229,Europe/Warsaw,1633445671,1633445672
+Mozilla,Windows NT 10.0; Win64; x64; rv:89.0,direct,www.example.com,Los Angeles,34.052235,-118.243683,America/Los_Angeles,1633745671,1633745673

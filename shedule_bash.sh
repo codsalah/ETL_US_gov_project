@@ -1,34 +1,35 @@
 #!/bin/bash
 
 # Check if the output directory exists
-if [ ! -d "$2" ]; then
-  echo "Output directory $2 does not exist. Creating it now."
-  mkdir -p "$2"
+if [ ! -d "$1" ]; then
+  echo "Output directory $1 does not exist. Creating it now."
+  mkdir -p "$1"
 fi
 
 # Loop through each JSON file provided as arguments
-for json_file in "$@"; do
-  # Skip the first argument (output directory)
-  if [ "$json_file" != "$2" ]; then
-    # Generate a timestamp
-    timestamp=$(date +"%Y%m%d_%H%M%S")
+# Skip the first argument (output directory)
+for json_file in "${@:2}"; do
+  # Generate a timestamp for unique output filenames
+  timestamp=$(date +"%Y%m%d_%H%M%S")
+  
+  # Extract the base name of the JSON file (without extension)
+  base_name=$(basename "$json_file" .json)
+  
+  # Define the output CSV file name
+  output_file="${base_name}_${timestamp}.csv"
 
-    # Define the output CSV file name
-    output_file="$2/transformed_data_${timestamp}.csv"
+  # Measure start time
+  start_time=$(date +%s)
 
-    # Measure start time
-    start_time=$(date +%s)
+  # Run the Python script with the current JSON file
+  python3 main.py -i "$json_file" -o "$1" -f "$output_file" -u
 
-    # Run the Python script
-    python main.py -i "$json_file" -o "$2" -u
+  # Measure end time
+  end_time=$(date +%s)
+  
+  # Calculate elapsed time
+  elapsed_time=$((end_time - start_time))
 
-    # Measure end time
-    end_time=$(date +%s)
-    
-    # Calculate elapsed time
-    elapsed_time=$((end_time - start_time))
-
-    # Print the result
-    echo "Processed $json_file in $elapsed_time seconds. Output saved to $output_file"
-  fi
+  # Print the result
+  echo "Processed $json_file in $elapsed_time seconds. Output saved to $1/$output_file"
 done

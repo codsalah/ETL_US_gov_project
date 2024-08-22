@@ -1,0 +1,9 @@
+web_browser,operating_sys,from_url,to_url,city,latitude,longitude,time_zone,time_in,time_out
+Mozilla,Windows NT 6.1; WOW64,www.facebook.com,www.ncbi.nlm.nih.gov,Danvers,42.576698,-70.954903,America/New_York,1333307030,1333307037
+Mozilla,Windows NT 6.1; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3,t.co,boxer.senate.gov,Washington,38.9007,-77.043098,America/New_York,1333407030,1333407035
+Mozilla,Macintosh; Intel Mac OS X 10_6_8,direct,apod.nasa.gov,Braz,-23.549999,-46.616699,America/Sao_Paulo,1333507030,1333507044
+Mozilla,Windows NT 6.1; WOW64,www.shrewsbury-ma.gov,www.shrewsbury-ma.gov,Shrewsbury,42.286499,-71.714699,America/New_York,1333607030,1333607039
+Mozilla,Windows NT 6.1; WOW64,www.shrewsbury-ma.gov,www.shrewsbury-ma.gov,Shrewsbury,42.286499,-71.714699,America/New_York,1333707030,1333707048
+Mozilla,Windows NT 5.1,plus.url.google.com,www.nasa.gov,Luban,51.116699,15.2833,Europe/Warsaw,1333807030,1333807040
+Mozilla,Windows NT 6.1; WOW64; rv:10.0.2,direct,www.nysdot.gov,Seattle,47.5951,-122.332603,America/Los_Angeles,1334107030,1334107040
+Mozilla,Macintosh; U; Intel Mac OS X 10.4; en-US; rv:1.9.2.27,t.co,oversight.house.gov,Washington,38.937599,-77.092796,America/New_York,1334207040,1334207043
