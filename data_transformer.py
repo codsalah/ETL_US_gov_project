@@ -8,7 +8,7 @@ from data_writer import write_csv
 
 def transform_data(input_path, output_path, output_file, keep_unix=False):
     """
-    Transforms JSON data to CSV format and saves it to the specified output path.
+    Transforms JSON data then write data in CSV format to the specified output path.
     """
     # Read JSON file using file_reader
     data = read_json_file(input_path)
@@ -28,7 +28,6 @@ def transform_data(input_path, output_path, output_file, keep_unix=False):
 
     # Extract city, latitude, and longitude
     df['city'] = df['cy']
-
     # Apply extraction function for latitude and longitude
     df[['latitude', 'longitude']] = df['ll'].apply(lambda x: pd.Series(extract_latitude_longitude(x)))
 
