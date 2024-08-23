@@ -1,0 +1,27 @@
+from sqlalchemy.orm import sessionmaker
+from sqlite_shema import UsaGov, engine
+from urllib.parse import urlparse
+
+def check_transformations():
+    """
+    This last check function will check if all the data meets the conditions before loading to Data analysis.
+    """
+    Session = sessionmaker(bind=engine)
+    session = Session()
+
+    # Records where the operating_sys contains spaces
+    oss = session.query(UsaGov).filter(UsaGov.operating_sys.like('% %')).all()
+
+    for record in oss:
+        # Get the first word
+        first_word = record.operating_sys.split(' ')[0]
+        
+        # Update the record with the first word
+        record.operating_sys = first_word
+
+    # Commit changes
+    session.commit()
+
+
+
+
