@@ -1,7 +1,3 @@
-Here's the updated README with your changes:
-
----
-
 # ETL_US_Gov_Project
 
 This project involves an ETL (Extract, Transform, Load) pipeline that processes web browsing data. The main tasks include merging CSV files, transforming data, and ensuring data quality before analysis.
@@ -103,3 +99,10 @@ The merged CSV file `final_file.csv` and the SQLite database contain the followi
 - **`time_zone`**: Time zone of the user
 - **`time_in`**: Timestamp when the user arrived
 - **`time_out`**: Timestamp when the user left
+
+# Power BI
+
+Integrated Power BI to visualize the final dataset.
+ 
+This includes creating various reports and dashboards to analyze key metrics and insights:
+![Power BI Dashboard](imgs/img2.png)
