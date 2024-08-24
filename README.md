@@ -2,6 +2,7 @@
 
 This project involves an ETL (Extract, Transform, Load) pipeline that processes web browsing data. The main tasks include merging CSV files, transforming data, and ensuring data quality before analysis.
 
+![ETL Pipeline Overview](imgs/img3.png)
 ## Project Overview
 
 ### 1. **Data Files**
@@ -46,7 +47,7 @@ This project involves an ETL (Extract, Transform, Load) pipeline that processes 
 
 - **Database File:** After merging the CSV files, the data is loaded into an SQLite database named `database.db` located in the `final_data_to_sqlite` folder. The database schema and table definitions are included in the `sqlite_shema.py` file.
 - **Database:** 
-![alt text](imgs/img1.png)
+![Database overview](imgs/img1.png)
 
 ### 4. **Setup and Installation**
 
@@ -103,6 +104,6 @@ The merged CSV file `final_file.csv` and the SQLite database contain the followi
 # Power BI
 
 Integrated Power BI to visualize the final dataset.
- 
+
 This includes creating various reports and dashboards to analyze key metrics and insights:
 ![Power BI Dashboard](imgs/img2.png)
